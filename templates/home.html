@@ -1,0 +1,63 @@
+{% extends './base.html' %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
+
+
+{% block body %}
+
+<script
+    defer src="https://app.embed.im/snow.js">
+</script>
+
+<!--DIV DE ENCABEZADO-->
+<div class="Presentacion"> 
+    <h1 class="titulo">Bienvenido, {{ current_user.fullname }} a PAPT </h1>
+    <a class="btn btn-secondary" href="{{ url_for('logout') }}">Cerrar sesión</a>
+    <p class="inicio"> <b>Tenemos muchas clases preparadas para ti, listo para <i>CAMBIAR TU VIDA?</i></b></p>
+
+        <ul>
+            <li style="--clr:#00ade1">
+                <a href="https://t.me/+XkOd4RhzEScxMTBh" data-text="&nbsp;Programacion en Python">&nbsp;Programacion en Python&nbsp; </a>
+            </li>
+            <li style="--clr:#ff6493">
+                <a href="https://chat.whatsapp.com/Gc4KS5gjPQH0yPRbkjuisj" data-text="&nbsp;Trading">&nbsp;Trading&nbsp;</a>
+            </li>
+            <li style="--clr:#ffdd1c">
+                <a href="https://chat.whatsapp.com/LXvcdlCKMGmIvSdqiqYwN4" data-text="&nbsp;Dropshiping"> &nbsp;Dropshiping&nbsp; </a>
+            </li>
+            <li style="--clr:#dc00d4">
+                <a href="https://chat.whatsapp.com/CYoaRsLnzY5FGwPTz7miDg" data-text="&nbsp;Ingles"> &nbsp;Ingles&nbsp; </a>
+            </li>
+            <li style="--clr:#ffdd1c">
+                <a href="https://chat.whatsapp.com/Et5L5lBBiGn5704B2p18DF" data-text="&nbsp;Base de Datos"> &nbsp;Base de Datos&nbsp; </a>
+            </li>
+            <li style="--clr:#ff6493">
+                <a href="https://chat.whatsapp.com/G8xK69oSkUK61XzHrQaODH" data-text="&nbsp;Hacking Etico">&nbsp;Hacking Etico&nbsp;</a>
+            </li>
+             </li>
+             <li style="--clr:#dc00d4">
+            <a href="https://chat.whatsapp.com/Hw0Gt6Q5IbE9ZjvwmACzBH" data-text="&nbsp;Html"> &nbsp;Html&nbsp; </a>
+             </li>
+            </li>
+            <li style="--clr:#00dc82">
+                <a href="https://chat.whatsapp.com/CAzXu7ZIHqQI2HRqxWSCUC" data-text="&nbsp;PAPT PORJECTS"> &nbsp;PAPT PORJECTS&nbsp; </a>
+            </li>
+            <li style="--clr:#ffdd1c">
+                <a href="https://chat.whatsapp.com/Ilm4eOHmQSM4sqMUUfNp29" data-text="&nbsp;Hacking"> &nbsp;Hacking&nbsp; </a>
+            </li>
+            
+            
+        </ul>
+</div>
+
+
+<!-- <h1>Bienvenido a la plataforma, {{ current_user.fullname }}</h1>
+<a class="btn btn-secondary" href="{{ url_for('logout') }}">Cerrar sesión</a> -->
+{% endblock %}
+

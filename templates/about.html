@@ -1,0 +1,171 @@
+/--{% extends './base.html' %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+{% block title %}Home{% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main2.css') }}">
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="about-section">
+    <h1 class="head"> <span>Nuestro Equipo</span></h1>
+    <p class="st">Hola, en esta seccion encontraras informacion acerca de nuestros educadores
+      y sobre lo que nos destacamos, la enseñanza. asi que si tienes ganas de mejorar tu futuro, te recomendamos
+      eleguir alguno de nuestros cursos. :)</p>
+      <br>
+      <br>
+      <br>
+  </div>
+
+
+<div class="container">
+    
+    <div class="row row-cols-1 row-cols-md-3 g4">
+        <div class="col">
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Profesor David</h5>
+              <p class="card-text">Profesor dedicado a la enseñanza del Trading.</p>
+              <a href="https://chat.whatsapp.com/Gc4KS5gjPQH0yPRbkjuisj" class="btn btn-primary">Contacto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Profesora Jazmin</h5>
+                <p class="card-text">Fundamentos Basicos de HTML.</p>
+                <a href="https://chat.whatsapp.com/Hw0Gt6Q5IbE9ZjvwmACzBH" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Profesores Ana y Getzael</h5>
+                <p class="card-text">Curso dedicado a la enseñanza de Base de Datos.</p>
+                <a href="https://chat.whatsapp.com/Et5L5lBBiGn5704B2p18DF" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Teacher Javier</h5>
+                <p class="card-text">Curso de Ingles desde Basico hasta B2.</p>
+                <a href="https://chat.whatsapp.com/CYoaRsLnzY5FGwPTz7miDg" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Profesor Daniel</h5>
+                <p class="card-text">Curso de programacion en Python.</p>
+                <a href="#" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Profesor Jeferson</h5>
+                <p class="card-text">PAPT PROJECTS.</p>
+                <a href="https://chat.whatsapp.com/CAzXu7ZIHqQI2HRqxWSCUC" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Profesor Nicolas</h5>
+                <p class="card-text">Aprende Dropshiping y como generar ingresos.</p>
+                <a href="#" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Profesor Jose</h5>
+                <p class="card-text">Fundamentos del Hacking.</p>
+                <a href="https://chat.whatsapp.com/Ilm4eOHmQSM4sqMUUfNp29" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Profesor Mateo</h5>
+                <p class="card-text">Curso de Hacking Etico.</p>
+                <a href="https://chat.whatsapp.com/G8xK69oSkUK61XzHrQaODH" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/logo.png') }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nombre instructor</h5>
+                <p class="card-text">puesto que desempeña en el Equipo.</p>
+                <a href="#" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+
+
+<br>
+<br>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<!-- LInks de las redes, ya estan direccionadas SOLO FALTA FB peroesa hasta que el boss diga que onda -->
+<ul class="redes">
+<li>
+<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icon"></i>    </a>
+</li>
+<li><a href="https://vm.tiktok.com/ZMF3wTLfD/" target="_blank"><i class="fab fa-TikTok icon"></i></a>
+</li>
+<li><a href="https://instagram.com/n.i.u._solutions_oficial?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram icon"></i></a>
+</li>
+<li><a href="https://t.me/+9llFocHOj4ZkYTVh" target="_blank"><i class="fab fa-telegram icon"></i></a>
+</li>
+</ul>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+{% endblock %}
+
